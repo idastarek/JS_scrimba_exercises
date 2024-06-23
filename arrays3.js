@@ -15,6 +15,6 @@ console.log("numbers", numbers);
 
 const numbers2 = [1, 2, 3, 4, 5, 6];
 
-const doubledNumbers2 = numbers.map(num => num * 2);
+const doubledNumbers2 = numbers2.map(num => num * 2);
 console.log('doubled numbers', doubledNumbers2);
 console.log('numbers', numbers2);

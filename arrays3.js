@@ -13,8 +13,17 @@ console.log("numbers", numbers);
 
 // multiply each number in the array by 2, using.map();
 
-const numbers2 = [1, 2, 3, 4, 5, 6];
 
-const doubledNumbers2 = numbers2.map(num => num * 2);
+const doubledNumbers2 = numbers.map(num => num * 2);
 console.log('doubled numbers', doubledNumbers2);
-console.log('numbers', numbers2);
+console.log('numbers', numbers);
+
+
+// return only numbers greater than 3, using .reduce();
+
+const numbersGreaterThan3 = numbers.reduce((acc, num) => {
+    num > 3 ? acc.push(num) : acc
+    return acc
+}, [])
+
+console.log(numbersGreaterThan3);

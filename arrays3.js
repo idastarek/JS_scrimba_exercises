@@ -2,12 +2,12 @@
 
 const numbers = [1, 2, 3, 4, 5, 6];
 
-const numbers_doubles = numbers.reduce((acc, num) => {
+const doubledNumbers = numbers.reduce((acc, num) => {
     acc.push(num*2);
     return acc;
 }, []);
 
-console.log("doubled numbers", numbers_doubles);
+console.log("doubled numbers", doubledNumbers);
 console.log("numbers", numbers);
 
 
@@ -27,7 +27,7 @@ const numbersGreaterThan3 = numbers.reduce((acc, num) => {
 
 console.log(numbersGreaterThan3);
 
-// // return only numbers greater than 3, using .filter();
+// return only numbers greater than 3, using .filter();
 
 const numbersGreaterThan3_v2 = numbers.filter(num => num > 3);
 console.log(numbersGreaterThan3_v2);
